@@ -2,12 +2,11 @@ from django.conf.urls import url, include
 
 from rest_framework import routers
 
-from project.api import views
-
+from api.views import user
 
 routers = routers.DefaultRouter()
 
-routers.register(r'project', views.UserViewSet)
+routers.register(r'project', user.UserViewSet)
 
 
 
